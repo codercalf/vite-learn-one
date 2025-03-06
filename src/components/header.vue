@@ -1,7 +1,18 @@
-<template><div class="header">header</div></template>
+<template>
+  <div><ElButton @click="open">open</ElButton></div>
+</template>
+<script setup>
+import { ElButton } from 'element-plus'
+function open() {
+  const pen = {
+    name: 'rectangle',
+    text: '矩形',
+    x: 100,
+    y: 100,
+    width: 100,
+    height: 100,
+  }
 
-<style lang="scss" scoped>
-.header {
-  color: red;
+  meta2d.open({ pens: [pen] })
 }
-</style>
+</script>

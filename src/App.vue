@@ -1,7 +1,6 @@
 <template>
   <div>
-    <div class="test">dddd</div>
-    <Header></Header>
+    <router-view></router-view>
   </div>
 </template>
 
